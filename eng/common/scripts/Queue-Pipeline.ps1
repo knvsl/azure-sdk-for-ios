@@ -20,25 +20,13 @@ param(
 )
 
 . "${PSScriptRoot}\logging.ps1"
-
-$headers = @{
-  Authorization = "Basic $AuthToken"
-}
-
-$apiUrl = "https://dev.azure.com/$Organization/$Project/_apis/build/builds?api-version=6.0"
-
-$body = @{
-  sourceBranch = $SourceBranch
-  definition = @{ id = $DefinitionId }
-}
-
-Write-Verbose ($body | ConvertTo-Json)
+. "${PSScriptRoot}\Invoke-DevOpsAPI.ps1"
 
 try {
-  $resp = Invoke-RestMethod -Method POST -Headers $headers $apiUrl -Body ($body | ConvertTo-Json) -ContentType application/json
+  $resp = Start-Build -SourceBranch $SourceBranch -DefinitionId $DefinitionId -AuthToken $AuthToken
 }
 catch {
-  LogError "Invoke-RestMethod [ $apiUrl ] failed with exception:`n$_"
+  LogError "Start-Build failed with exception:`n$_"
   exit 1
 }
 
