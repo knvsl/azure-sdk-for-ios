@@ -1279,7 +1279,11 @@ public final class ChatThread {
         }
         let urlTemplate = "/chat/threads/{chatThreadId}/participants/:remove"
         guard let requestUrl = client.url(host: "{endpoint}", template: urlTemplate, params: params),
+<<<<<<< HEAD:sdk/communication/AzureCommunicationChat/Source/Generated/ChatThread.swift
               let request = try? HTTPRequest(method: .post, url: requestUrl, headers: params.headers, data: requestBody)
+=======
+              let request = try? HTTPRequest(method: .delete, url: requestUrl, headers: params.headers)
+>>>>>>> 1fa7842f (Add import path):sdk/communication/AzureCommunicationChat/Source/Generated/ChatThreadOperation.swift
         else {
             client.options.logger.error("Failed to construct HTTP request.")
             return
