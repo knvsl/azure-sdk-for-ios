@@ -903,7 +903,7 @@
 				D17C7B4625FBF4C3007AD39B /* ChatThread+UpdateChatMessageOptions.swift in Sources */,
 				88D37B8F25D60CCD004F3699 /* MicrosoftTeamsUserIdentifierModel.swift in Sources */,
 				D15E990025B7C80C00E63DB2 /* AzureCommunicationChatClientOptions.swift in Sources */,
-				D17C7B4425FBF4C3007AD39B /* ChatThread+DeleteChatMessageOptions.swift in Sources */, 
+				D17C7B4425FBF4C3007AD39B /* ChatThread+DeleteChatMessageOptions.swift in Sources */,
 				D17C7B5F25FBF4D5007AD39B /* ChatMessageInternal.swift in Sources */,
 				D17C7B4B25FBF4C3007AD39B /* ChatThread+RemoveChatParticipantOptions.swift in Sources */,
 				D15E991025B7C80C00E63DB2 /* SendChatMessageRequest.swift in Sources */,
@@ -1141,6 +1141,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1204,6 +1205,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
