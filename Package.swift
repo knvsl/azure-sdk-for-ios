@@ -66,9 +66,14 @@ let package = Package(
             ],
             sources: ["Source"]
         ),
+        .binaryTarget(
+            name: "TrouterClientIos",
+            url: "https://github.com/microsoft/trouter-client-ios/releases/tag/v0.0.1-beta.1/TrouterClientIos-0.0.1-beta.1.zip",
+            checksum: "bd568e938c51b6c91a4557b04a99a9750f5503c33fc24a7f4e82834fd2452e87"
+        ),
         .target(
             name: "AzureCommunicationChat",
-            dependencies: ["AzureCore", "AzureCommunication"],
+            dependencies: ["AzureCore", "AzureCommunication","TrouterClientIos"],
             path: "sdk/communication/AzureCommunicationChat",
             exclude: [
                 "README.md",

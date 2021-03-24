@@ -117,6 +117,7 @@
 		D1CD93E4258D6EF700409613 /* sendTypingNotification.json in Resources */ = {isa = PBXBuildFile; fileRef = D1CD93E3258D6EF700409613 /* sendTypingNotification.json */; };
 		D1CD93E8258D6F0600409613 /* updateMessage.json in Resources */ = {isa = PBXBuildFile; fileRef = D1CD93E7258D6F0600409613 /* updateMessage.json */; };
 		D1CD93EC258D6F1300409613 /* updateTopic.json in Resources */ = {isa = PBXBuildFile; fileRef = D1CD93EB258D6F1300409613 /* updateTopic.json */; };
+		D5EE9CDC260AD053009463DC /* TrouterClientIos in Frameworks */ = {isa = PBXBuildFile; productRef = D5EE9CDB260AD053009463DC /* TrouterClientIos */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -288,6 +289,7 @@
 				D110F50A258D604B001FA3CD /* AzureCore.framework in Frameworks */,
 				D110F507258D603F001FA3CD /* AzureCommunication.framework in Frameworks */,
 				D110F50C258D6053001FA3CD /* Pods_AzureCommunicationChat.framework in Frameworks */,
+				D5EE9CDC260AD053009463DC /* TrouterClientIos in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +582,9 @@
 			dependencies = (
 			);
 			name = AzureCommunicationChat;
+			packageProductDependencies = (
+				D5EE9CDB260AD053009463DC /* TrouterClientIos */,
+			);
 			productName = AzureCommunicationChat;
 			productReference = "AzureCommunicationChat::AzureCommunicationChat::Product" /* AzureCommunicationChat.framework */;
 			productType = "com.apple.product-type.framework";
@@ -660,6 +665,7 @@
 			mainGroup = OBJ_5;
 			packageReferences = (
 				D1BA104B25807B7500CA7130 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
+				D5EE9CDA260AD053009463DC /* XCRemoteSwiftPackageReference "trouter-client-ios" */,
 			);
 			productRefGroup = OBJ_113 /* Products */;
 			projectDirPath = "";
@@ -1283,6 +1289,14 @@
 				minimumVersion = 9.1.0;
 			};
 		};
+		D5EE9CDA260AD053009463DC /* XCRemoteSwiftPackageReference "trouter-client-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/glorialimicrosoft/trouter-client-ios.git";
+			requirement = {
+				branch = gelli/tryOutSPM;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1295,6 +1309,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D1BA104B25807B7500CA7130 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
 			productName = OHHTTPStubsSwift;
+		};
+		D5EE9CDB260AD053009463DC /* TrouterClientIos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5EE9CDA260AD053009463DC /* XCRemoteSwiftPackageReference "trouter-client-ios" */;
+			productName = TrouterClientIos;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
