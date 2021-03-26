@@ -13,11 +13,11 @@ import AzureCommunication
 import AzureCore
 
 struct Constants {
-    static let endpoint =  "<ACS_RESOURCE_ENDPOINT>"
-    static let id1 = "<USER_ID>"
-    static let skypeToken = "<ACCESS_TOKEN>"
-    static let id2 = "<USER_ID>"
-    static let skypeToken2 = "<ACCESS_TOKEN>"
+    static let endpoint =  "https://chat-sdktester-e2e.communication.azure.com"
+    static let id1 = "8:acs:357e39d2-a29a-4bf6-88cc-fda0afc2c0ed_00000008-fc9c-f10f-ac00-343a0d00270c"
+    static let skypeToken = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwMiIsIng1dCI6IjNNSnZRYzhrWVNLd1hqbEIySmx6NTRQVzNBYyIsInR5cCI6IkpXVCJ9.eyJza3lwZWlkIjoiYWNzOjM1N2UzOWQyLWEyOWEtNGJmNi04OGNjLWZkYTBhZmMyYzBlZF8wMDAwMDAwOC1mYzljLWYxMGYtYWMwMC0zNDNhMGQwMDI3MGMiLCJzY3AiOjE3OTIsImNzaSI6IjE2MTY3NzkxNzUiLCJpYXQiOjE2MTY3NzkxNzUsImV4cCI6MTYxNjg2NTU3NSwiYWNzU2NvcGUiOiJjaGF0IiwicmVzb3VyY2VJZCI6IjM1N2UzOWQyLWEyOWEtNGJmNi04OGNjLWZkYTBhZmMyYzBlZCJ9.pxIsAc-45i-WW3iJcnOVKUcov-ff70EvXRzCcE55jDHizlCFr-NDoOM_84lyGpxpi8GwKhkvNR46_MuXFUeAa39BqHbOZ7-k9NM89cRbs-gn1Dg0-08mdT-WzvyK2snCNYvPc-nGSnjkAoxb2AEst0xiLvcmOHJyiFtajjePNQ2p92j-fujUe19cmdHXyGa4bmDUd3axE-_fdmS9suy1k7DgLqFfekGA8n8Wtzwf0Sy4XHPOfsb7c8Cg35cJjlKPZeC6hpxfV3Wuyg_oP72XYG-tjBeDASkHBOs3Kiztb_2M4eIdWLjR5FFKQ3w432yMyurtehe7mQTsLzr9xdKzAA"
+    static let id2 = "8:acs:357e39d2-a29a-4bf6-88cc-fda0afc2c0ed_00000009-05c9-62e8-99bf-a43a0d00df6e"
+    static let skypeToken2 = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwMiIsIng1dCI6IjNNSnZRYzhrWVNLd1hqbEIySmx6NTRQVzNBYyIsInR5cCI6IkpXVCJ9.eyJza3lwZWlkIjoiYWNzOjM1N2UzOWQyLWEyOWEtNGJmNi04OGNjLWZkYTBhZmMyYzBlZF8wMDAwMDAwOS0wNWM5LTYyZTgtOTliZi1hNDNhMGQwMGRmNmUiLCJzY3AiOjE3OTIsImNzaSI6IjE2MTY3NzkyMDQiLCJpYXQiOjE2MTY3NzkyMDQsImV4cCI6MTYxNjg2NTYwNCwiYWNzU2NvcGUiOiJjaGF0IiwicmVzb3VyY2VJZCI6IjM1N2UzOWQyLWEyOWEtNGJmNi04OGNjLWZkYTBhZmMyYzBlZCJ9.09DU5mNXk4KPGjTv_bI7D3IbtBtabsj0khRykkAZDz1wWwyImMwvU4ydpFa42NecyYyfS5oMzCA9kVenUUFYr4dalLPZ2CSwFqqrvyabO8xoUrIKZkTbHiHw6n4VfX5JzH6gumUC6mEuJkVrq7M8QCdI40ZRt24Wh4INlMWduRXgDGDTdgMrE24iakH4F7U7e7mLPS0ufgf8Sf4vAiGptq9rIAufuEmUVymmrd9Ftx-bn8WXup4HAzJ-dpXRgKvTmQi1uyBi2yq4JkaaVhTrj1tS4ujnnFLuU92uEUpcYnJVlleXVNGGBODiFNpCCDoyV8doW9iDDlya-5PfQpotKQ"
     
 }
 

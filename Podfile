@@ -38,7 +38,7 @@ end
 
 target 'AzureCommunicationChat' do
   project 'sdk/communication/AzureCommunicationChat/AzureCommunicationChat'
-  pod 'TrouterClientIos', '0.0.1-beta.1'
+  pod 'TrouterClientIos', '0.0.1-beta.3'
 
   target 'AzureCommunicationChatTests' do
     inherit! :search_paths

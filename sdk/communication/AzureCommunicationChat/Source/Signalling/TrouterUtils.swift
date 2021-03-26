@@ -8,7 +8,7 @@
 
 import AzureCore
 import Foundation
-import TrouterModulePrivate
+import TrouterClientIos
 
 func toEventPayload(request: TrouterRequest, chatEventId: ChatEventId) -> Any? {
     do {
