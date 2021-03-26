@@ -68,14 +68,6 @@ public class ChatClient {
         )
 
         self.service = client.chat
-
-        // Initialize the signalling client with the users access token
-        var token: String?
-        credential.token { accessToken, error in
-            token = accessToken?.token
-        }
-
-        self.signallingClient = CommunicationSignallingClient(token: token)
     }
 
     // MARK: Private Methods
