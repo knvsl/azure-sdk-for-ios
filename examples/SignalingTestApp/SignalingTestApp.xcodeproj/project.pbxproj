@@ -13,10 +13,31 @@
 		D50EC10625AD1DDA00FA1177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D50EC10425AD1DDA00FA1177 /* Main.storyboard */; };
 		D50EC10825AD1DDC00FA1177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50EC10725AD1DDC00FA1177 /* Assets.xcassets */; };
 		D50EC10B25AD1DDC00FA1177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D50EC10925AD1DDC00FA1177 /* LaunchScreen.storyboard */; };
-		D576D4F125AE520F007468C7 /* AzureCommunicationChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D576D4F025AE520F007468C7 /* AzureCommunicationChat.framework */; };
+		D554C63E260C580B00167E05 /* AzureCommunicationChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D554C63D260C580B00167E05 /* AzureCommunicationChat.framework */; };
+		D554C63F260C580B00167E05 /* AzureCommunicationChat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D554C63D260C580B00167E05 /* AzureCommunicationChat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D554C642260C582300167E05 /* AzureCommunication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D554C641260C582300167E05 /* AzureCommunication.framework */; };
+		D554C643260C582300167E05 /* AzureCommunication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D554C641260C582300167E05 /* AzureCommunication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D554C645260C582700167E05 /* AzureCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D554C644260C582700167E05 /* AzureCore.framework */; };
+		D554C646260C582700167E05 /* AzureCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D554C644260C582700167E05 /* AzureCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D5DB4A5025C139A6003396EB /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB4A4E25C139A6003396EB /* MyTableViewCell.swift */; };
 		D5DB4A5125C139A6003396EB /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5DB4A4F25C139A6003396EB /* MyTableViewCell.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D554C640260C580B00167E05 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D554C63F260C580B00167E05 /* AzureCommunicationChat.framework in Embed Frameworks */,
+				D554C646260C582700167E05 /* AzureCore.framework in Embed Frameworks */,
+				D554C643260C582300167E05 /* AzureCommunication.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D50EC0FB25AD1DDA00FA1177 /* SignalingTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignalingTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,8 +48,10 @@
 		D50EC10725AD1DDC00FA1177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D50EC10A25AD1DDC00FA1177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D50EC10C25AD1DDC00FA1177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D576D4F025AE520F007468C7 /* AzureCommunicationChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AzureCommunicationChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D576D4F625AE52B5007468C7 /* AzureCommunicationSignaling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AzureCommunicationSignaling.framework; sourceTree = "<group>"; };
+		D54955A6260C6828001CD62F /* SignalingTestAppDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignalingTestAppDebug.entitlements; sourceTree = "<group>"; };
+		D554C63D260C580B00167E05 /* AzureCommunicationChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AzureCommunicationChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D554C641260C582300167E05 /* AzureCommunication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AzureCommunication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D554C644260C582700167E05 /* AzureCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AzureCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DB4A4E25C139A6003396EB /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		D5DB4A4F25C139A6003396EB /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,7 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D576D4F125AE520F007468C7 /* AzureCommunicationChat.framework in Frameworks */,
+				D554C63E260C580B00167E05 /* AzureCommunicationChat.framework in Frameworks */,
+				D554C645260C582700167E05 /* AzureCore.framework in Frameworks */,
+				D554C642260C582300167E05 /* AzureCommunication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +90,7 @@
 		D50EC0FD25AD1DDA00FA1177 /* SignalingTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				D54955A6260C6828001CD62F /* SignalingTestAppDebug.entitlements */,
 				D50EC0FE25AD1DDA00FA1177 /* AppDelegate.swift */,
 				D50EC10025AD1DDA00FA1177 /* SceneDelegate.swift */,
 				D50EC10225AD1DDA00FA1177 /* ViewController.swift */,
@@ -81,8 +107,9 @@
 		D576D4EF25AE520F007468C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D576D4F625AE52B5007468C7 /* AzureCommunicationSignaling.framework */,
-				D576D4F025AE520F007468C7 /* AzureCommunicationChat.framework */,
+				D554C644260C582700167E05 /* AzureCore.framework */,
+				D554C641260C582300167E05 /* AzureCommunication.framework */,
+				D554C63D260C580B00167E05 /* AzureCommunicationChat.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,6 +124,7 @@
 				D50EC0F725AD1DDA00FA1177 /* Sources */,
 				D50EC0F825AD1DDA00FA1177 /* Frameworks */,
 				D50EC0F925AD1DDA00FA1177 /* Resources */,
+				D554C640260C580B00167E05 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,7 +336,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SignalingTestApp/SignalingTestAppDebug.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBF8T346G9;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -318,8 +350,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = contoso.SignalingTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = contoso.SignalingTestAppgloria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,6 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
