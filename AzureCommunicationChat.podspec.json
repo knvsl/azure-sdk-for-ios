@@ -31,7 +31,7 @@
     "AzureCommunication": [
       "~> 1.0.0-beta.0"
     ]
-    "TrouterClientIos":[
+    "TrouterClientIos": [
       "~> 0.0.1-beta.1"
     ]
   },
