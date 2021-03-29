@@ -9,6 +9,7 @@
 - Updated `CommunicationTokenCredential` init method from `init(with:)` to `init(withOptions:)`. Objective-c method will change from `initWith: error:]` to `initWithOptions: error:]`. 
 - Removed `CommunicationPolicyTokenCredential`.
 - Typealias `TokenRefreshOnCompletion` renamed to `TokenRefreshHandler`.
+- Typealias `TokenRefresherClosure` renamed to `TokenRefresher`.
 
 ### Key Bug Fixes
 
@@ -135,6 +136,7 @@
   libraries.
 
 ### Breaking Changes
+
 **Azure Communication Chat Service**
   - The `baseUrl` parameter has been renamed to `endpoint` in the `AzureCommunicationChatClient` initializers.
 
