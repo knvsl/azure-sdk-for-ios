@@ -16,18 +16,18 @@ import Foundation
 // swiftlint:disable cyclomatic_complexity
 
 /// The Communication Services error.
-public struct CommunicationErrorResponse: Codable, Swift.Error {
+internal struct ChatErrorResponse: Codable, Swift.Error {
     // MARK: Properties
 
     /// The Communication Services error.
-    public let error: CommunicationError
+    internal let error: CommunicationError
 
     // MARK: Initializers
 
-    /// Initialize a `CommunicationErrorResponse` structure.
+    /// Initialize a `ChatErrorResponse` structure.
     /// - Parameters:
     ///   - error: The Communication Services error.
-    public init(
+    internal init(
         error: CommunicationError
     ) {
         self.error = error
@@ -39,13 +39,13 @@ public struct CommunicationErrorResponse: Codable, Swift.Error {
         case error = "error"
     }
 
-    /// Initialize a `CommunicationErrorResponse` structure from decoder
+    /// Initialize a `ChatErrorResponse` structure from decoder
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.error = try container.decode(CommunicationError.self, forKey: .error)
     }
 
-    /// Encode a `CommunicationErrorResponse` structure
+    /// Encode a `ChatErrorResponse` structure
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(error, forKey: .error)
