@@ -15,24 +15,24 @@ import Foundation
 // swiftlint:disable identifier_name
 // swiftlint:disable line_length
 
-public extension Chat {
+extension Chat {
     /// User-configurable options for the `AzureCommunicationChatService.CreateChatThread` operation.
     struct CreateChatThreadOptions: RequestOptions {
         /// If specified, the client directs that the request is repeatable; that is, that the client can make the request multiple times with the same Repeatability-Request-Id and get back an appropriate response without the server executing the request multiple times. The value of the Repeatability-Request-Id is an opaque string representing a client-generated, globally unique for all time, identifier for the request. It is recommended to use version 4 (random) UUIDs.
-        public let repeatabilityRequestId: String?
+        let repeatabilityRequestId: String?
 
         /// A client-generated, opaque value with 1KB character limit that is recorded in analytics logs.
         /// Highly recommended for correlating client-side activites with requests received by the server.
-        public let clientRequestId: String?
+        let clientRequestId: String?
 
         /// A token used to make a best-effort attempt at canceling a request.
-        public let cancellationToken: CancellationToken?
+        let cancellationToken: CancellationToken?
 
         /// A dispatch queue on which to call the completion handler. Defaults to `DispatchQueue.main`.
-        public var dispatchQueue: DispatchQueue?
+        var dispatchQueue: DispatchQueue?
 
         /// A `PipelineContext` object to associate with the request.
-        public var context: PipelineContext?
+        var context: PipelineContext?
 
         /// Initialize a `CreateChatThreadOptions` structure.
         /// - Parameters:
@@ -41,7 +41,7 @@ public extension Chat {
         ///   - cancellationToken: A token used to make a best-effort attempt at canceling a request.
         ///   - dispatchQueue: A dispatch queue on which to call the completion handler. Defaults to `DispatchQueue.main`.
         ///   - context: A `PipelineContext` object to associate with the request.
-        public init(
+        init(
             repeatabilityRequestId: String? = nil,
             clientRequestId: String? = nil,
             cancellationToken: CancellationToken? = nil,

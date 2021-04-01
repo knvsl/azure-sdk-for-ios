@@ -15,21 +15,21 @@ import Foundation
 // swiftlint:disable identifier_name
 // swiftlint:disable line_length
 
-public extension ChatThread {
+extension ChatThread {
     /// User-configurable options for the `AzureCommunicationChatService.AddChatParticipants` operation.
     struct AddChatParticipantsOptions: RequestOptions {
         /// A client-generated, opaque value with 1KB character limit that is recorded in analytics logs.
         /// Highly recommended for correlating client-side activites with requests received by the server.
-        public let clientRequestId: String?
+        let clientRequestId: String?
 
         /// A token used to make a best-effort attempt at canceling a request.
-        public let cancellationToken: CancellationToken?
+        let cancellationToken: CancellationToken?
 
         /// A dispatch queue on which to call the completion handler. Defaults to `DispatchQueue.main`.
-        public var dispatchQueue: DispatchQueue?
+        var dispatchQueue: DispatchQueue?
 
         /// A `PipelineContext` object to associate with the request.
-        public var context: PipelineContext?
+        var context: PipelineContext?
 
         /// Initialize a `AddChatParticipantsOptions` structure.
         /// - Parameters:
@@ -37,7 +37,7 @@ public extension ChatThread {
         ///   - cancellationToken: A token used to make a best-effort attempt at canceling a request.
         ///   - dispatchQueue: A dispatch queue on which to call the completion handler. Defaults to `DispatchQueue.main`.
         ///   - context: A `PipelineContext` object to associate with the request.
-        public init(
+        init(
             clientRequestId: String? = nil,
             cancellationToken: CancellationToken? = nil,
             dispatchQueue: DispatchQueue? = nil,
