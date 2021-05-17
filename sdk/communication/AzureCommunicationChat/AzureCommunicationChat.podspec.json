@@ -18,7 +18,7 @@
   "swift_versions": "5.0",
   "source": {
     "git": "https://github.com/knvsl/azure-sdk-for-ios.git",
-    "tag": "1.0.0-beta.11"
+    "branch": "knvsl/upgrade-chat"
   },
   "source_files": "sdk/communication/AzureCommunicationChat/Source/**/*.{swift,h,m}",
   "pod_target_xcconfig": {
