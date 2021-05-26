@@ -147,8 +147,6 @@ public class ChatClient {
 
                 case let .failure(error):
                     completionHandler(.failure(error), httpResponse)
-                    let status = httpResponse?.statusCode
-                    print(status)
                 }
             }
         } catch {
