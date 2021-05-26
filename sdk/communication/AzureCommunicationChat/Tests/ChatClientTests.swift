@@ -47,7 +47,13 @@ class ChatClientTests: XCTestCase {
         let endpoint = getEnvironmentVariable(withKey: "AZURE_COMMUNICATION_ENDPOINT", default: "https://endpoint")
         let token = generateToken()
         let credential = try CommunicationTokenCredential(token: token)
-        let options = AzureCommunicationChatClientOptions()
+        // let options = AzureCommunicationChatClientOptions()
+        let options = AzureCommunicationChatClientOptions(
+            logger: ClientLoggers.default(tag: "AzureCommunicationChatClient", level: .debug),
+            transportOptions: TransportOptions(
+                perRequestPolicies: [LoggingPolicy(allowHeaders: ["ms-cv", "Authorization"])]
+            )
+        )
 
         chatClient = try ChatClient(endpoint: endpoint, credential: credential, withOptions: options)
     }
