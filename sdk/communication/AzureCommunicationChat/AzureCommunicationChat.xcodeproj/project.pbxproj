@@ -108,11 +108,7 @@
 		D1CD93E4258D6EF700409613 /* sendTypingNotification.json in Resources */ = {isa = PBXBuildFile; fileRef = D1CD93E3258D6EF700409613 /* sendTypingNotification.json */; };
 		D1CD93E8258D6F0600409613 /* updateMessage.json in Resources */ = {isa = PBXBuildFile; fileRef = D1CD93E7258D6F0600409613 /* updateMessage.json */; };
 		D1CD93EC258D6F1300409613 /* updateTopic.json in Resources */ = {isa = PBXBuildFile; fileRef = D1CD93EB258D6F1300409613 /* updateTopic.json */; };
-		D1CF1A882697C95500F7EB1A /* UpdateChatMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CF1A872697C95500F7EB1A /* UpdateChatMessageRequest.swift */; };
-		D1F16FA72697B200005606C3 /* UpdateChatThreadRequestInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F16FA32697B200005606C3 /* UpdateChatThreadRequestInternal.swift */; };
-		D1F16FA82697B200005606C3 /* AddChatParticipantsRequestInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F16FA42697B200005606C3 /* AddChatParticipantsRequestInternal.swift */; };
-		D1F16FA92697B200005606C3 /* CommunicationIdentifierModelInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F16FA52697B200005606C3 /* CommunicationIdentifierModelInternal.swift */; };
-		D56B96117CC0DBAC8167088A /* Pods_AzureCommunicationChatUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53A93628463638BD2194963 /* Pods_AzureCommunicationChatUnitTests.framework */; };
+		D1E738EB2680EFFC007089EC /* SendTypingNotificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E738EA2680EFFC007089EC /* SendTypingNotificationRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -258,11 +254,8 @@
 		D1CD93EB258D6F1300409613 /* updateTopic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = updateTopic.json; sourceTree = "<group>"; };
 		D1CF1A872697C95500F7EB1A /* UpdateChatMessageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateChatMessageRequest.swift; sourceTree = "<group>"; };
 		D1D829BD25D1FFD700AC3CF3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D1F16FA32697B200005606C3 /* UpdateChatThreadRequestInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateChatThreadRequestInternal.swift; sourceTree = "<group>"; };
-		D1F16FA42697B200005606C3 /* AddChatParticipantsRequestInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddChatParticipantsRequestInternal.swift; sourceTree = "<group>"; };
-		D1F16FA52697B200005606C3 /* CommunicationIdentifierModelInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicationIdentifierModelInternal.swift; sourceTree = "<group>"; };
-		EA55FCB9FB58BAE327C97579 /* Pods_AzureCommunicationChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzureCommunicationChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6C8A0BDD521FD8ECD116120 /* Pods_AzureCommunicationChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzureCommunicationChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1E738EA2680EFFC007089EC /* SendTypingNotificationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendTypingNotificationRequest.swift; sourceTree = "<group>"; };
+		F1FE3013E797A134E8A6C3B5 /* Pods_AzureCommunicationChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzureCommunicationChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF18D210ADF02D5CBA71786 /* Pods-AzureCommunicationChatUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureCommunicationChatUnitTests.release.xcconfig"; path = "Target Support Files/Pods-AzureCommunicationChatUnitTests/Pods-AzureCommunicationChatUnitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -437,10 +430,7 @@
 		D15E98E025B7C80C00E63DB2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D1CF1A872697C95500F7EB1A /* UpdateChatMessageRequest.swift */,
-				D1F16FA42697B200005606C3 /* AddChatParticipantsRequestInternal.swift */,
-				D1F16FA52697B200005606C3 /* CommunicationIdentifierModelInternal.swift */,
-				D1F16FA32697B200005606C3 /* UpdateChatThreadRequestInternal.swift */,
+				D1E738EA2680EFFC007089EC /* SendTypingNotificationRequest.swift */,
 				0A68BF752656EED6004A7E3D /* ChatError.swift */,
 				D17C7B5925FBF4D5007AD39B /* ChatMessageContentInternal.swift */,
 				D17C7B5525FBF4D5007AD39B /* ChatMessageInternal.swift */,
@@ -868,7 +858,7 @@
 				D10458A725EEA47800B3EB6D /* CommunicationSignalingClient.swift in Sources */,
 				D10458A825EEA47800B3EB6D /* TrouterEventUtil.swift in Sources */,
 				D17C7B5E25FBF4D5007AD39B /* ChatParticipantInternal.swift in Sources */,
-				D1CF1A882697C95500F7EB1A /* UpdateChatMessageRequest.swift in Sources */,
+				D1E738EB2680EFFC007089EC /* SendTypingNotificationRequest.swift in Sources */,
 				0EDC089C2640892B004CA84B /* DeleteChatThreadOptions.swift in Sources */,
 				D15E991925B7C80C00E63DB2 /* Enumerations.swift in Sources */,
 				D1F16FA92697B200005606C3 /* CommunicationIdentifierModelInternal.swift in Sources */,
