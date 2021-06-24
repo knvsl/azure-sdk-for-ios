@@ -39,6 +39,8 @@
 		88F361172630EB7200A895D1 /* AzureCommunicationCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88F361152630EB7200A895D1 /* AzureCommunicationCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D10458A725EEA47800B3EB6D /* CommunicationSignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10458A125EEA47800B3EB6D /* CommunicationSignalingClient.swift */; };
 		D10458A825EEA47800B3EB6D /* TrouterEventUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10458A225EEA47800B3EB6D /* TrouterEventUtil.swift */; };
+		D10901672684F20B001FFF37 /* Trouter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D10901662684F20B001FFF37 /* Trouter.xcframework */; };
+		D10901682684F20B001FFF37 /* Trouter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D10901662684F20B001FFF37 /* Trouter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D10C3BCE25A63F7800A181E3 /* listParticipants.json in Resources */ = {isa = PBXBuildFile; fileRef = D10C3BCD25A63F7800A181E3 /* listParticipants.json */; };
 		D10C3BD425A660AF00A181E3 /* listMessages.json in Resources */ = {isa = PBXBuildFile; fileRef = D10C3BD325A660AF00A181E3 /* listMessages.json */; };
 		D10C3BDA25A66D4D00A181E3 /* listThreads.json in Resources */ = {isa = PBXBuildFile; fileRef = D10C3BD925A66D4D00A181E3 /* listThreads.json */; };
@@ -140,6 +142,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				88F361172630EB7200A895D1 /* AzureCommunicationCommon.framework in Embed Frameworks */,
+				D10901682684F20B001FFF37 /* Trouter.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1276,6 +1279,5 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-	};
 	rootObject = OBJ_1 /* Project object */;
 }
