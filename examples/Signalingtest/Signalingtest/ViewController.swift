@@ -4,11 +4,11 @@ import AzureCommunicationCommon
 import AzureCore
 
 struct Constants {
-    static let endpoint =  ""
-    static let id1 = ""
-    static let skypeToken = ""
-    static let id2 = ""
-    static let skypeToken2 = ""
+    static let endpoint =  "https://kimtestacs.communication.azure.com/"
+    static let id1 = "8:acs:d2a829bc-8523-4404-b727-022345e48ca6_0000000a-e537-4183-f40f-343a0d00a855"
+    static let skypeToken = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwMiIsIng1dCI6IjNNSnZRYzhrWVNLd1hqbEIySmx6NTRQVzNBYyIsInR5cCI6IkpXVCJ9.eyJza3lwZWlkIjoiYWNzOmQyYTgyOWJjLTg1MjMtNDQwNC1iNzI3LTAyMjM0NWU0OGNhNl8wMDAwMDAwYS1lNTM3LTQxODMtZjQwZi0zNDNhMGQwMGE4NTUiLCJzY3AiOjE3OTIsImNzaSI6IjE2MjQ2NjA4NzYiLCJpYXQiOjE2MjQ2NjA4NzYsImV4cCI6MTYyNDc0NzI3NiwiYWNzU2NvcGUiOiJjaGF0IiwicmVzb3VyY2VJZCI6ImQyYTgyOWJjLTg1MjMtNDQwNC1iNzI3LTAyMjM0NWU0OGNhNiJ9.MrIa_yEBvrEF8qG4DzInkrj2Y5TlqIkhoA0Zu1HpRR93zEMHqJwnN72UpcOb7bqg4e49Bz1XRTsHHtECiAmwyOb4xA28L7KuBXk4R6RqwRhl5GtuZYojvcpaO1EmYeVsW_zofUm3V8_qzRN1N1CAA8BIslyp-jfTDARWYeprDX8jyerHP7T1d0JnNnY4I0AubD-VSVopbLOqs4dY2h0GWQ0vZDoEz8PuaS2_K2sJ4xjGaTtOpIH8zhtDU399I2V0eYXjY9oHjXox1qlqZOhho6VutXGRZnMDpJNCK2M2FcUpjpDAhJHBP88ccLx0dIxQnoxWv3fix5MN-EkPrtemXg"
+    static let id2 = "8:acs:d2a829bc-8523-4404-b727-022345e48ca6_0000000a-e537-422e-f40f-343a0d00a856"
+    static let skypeToken2 = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwMiIsIng1dCI6IjNNSnZRYzhrWVNLd1hqbEIySmx6NTRQVzNBYyIsInR5cCI6IkpXVCJ9.eyJza3lwZWlkIjoiYWNzOmQyYTgyOWJjLTg1MjMtNDQwNC1iNzI3LTAyMjM0NWU0OGNhNl8wMDAwMDAwYS1lNTM3LTQyMmUtZjQwZi0zNDNhMGQwMGE4NTYiLCJzY3AiOjE3OTIsImNzaSI6IjE2MjQ2NjA4NzciLCJpYXQiOjE2MjQ2NjA4NzcsImV4cCI6MTYyNDc0NzI3NywiYWNzU2NvcGUiOiJjaGF0IiwicmVzb3VyY2VJZCI6ImQyYTgyOWJjLTg1MjMtNDQwNC1iNzI3LTAyMjM0NWU0OGNhNiJ9.wRHIPim7MLiumzX1ZKKkYLXcFncY94JPi_1NjzEzAUPu5EBrpIki9S6RYsKt4WQ9lI3cT8G226GMGtpESA18T2r-hqjqHtrES__mzFzB_bmmGZqOFuKC3rt86IBhco_z_Fc6YqrR0QLo1RduqT6KhaUHDmcFoeVyP0J5N_3rgJm2REai56UdIb2tNrG0gdynK3O5DNKdC-iJb1z-_4ghpHvWbtwvOsZOQmKs5w1cMa3pyxAOCX58wO95AdMOAlwh-b7Zi1Hj47OWlawZVTf7Cyq-nxkxPGxfmVCqUJ3r-3HND_ATcmG2qKJnD8zc8KcDxWzGNj4Er3GGMsDm2vskrw"
     
 }
 
@@ -261,7 +261,7 @@ extension ViewController: MyTableViewCellDelegate {
                 return
             }
 
-            chatThreadClient?.update(content: "Updated Message", messageId: chatMessageId!, completionHandler: { result, _ in
+            chatThreadClient?.update(content: "Updated Message", forMessage: chatMessageId!, completionHandler: { result, _ in
                 switch result {
                 case let .success(response):
                     print(response)
